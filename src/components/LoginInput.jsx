@@ -39,6 +39,7 @@ export default function LoginInput({ login }) {
             focusBorderColor="teal.400"
             value={password}
             onChange={onPasswordChange}
+            placeholder="********"
           />
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClickVisibility}>
