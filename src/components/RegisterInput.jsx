@@ -28,6 +28,7 @@ export default function RegisterInput({ register }) {
           focusBorderColor="teal.400"
           value={name}
           onChange={onNameChange}
+          placeholder="Username"
         />
       </FormControl>
       <FormControl mt={4} id="email" isRequired>
@@ -48,6 +49,7 @@ export default function RegisterInput({ register }) {
             type={showPassword ? 'text' : 'password'}
             value={password}
             onChange={onPasswordChange}
+            placeholder="********"
           />
           <InputRightElement width="4.5rem">
             <Button h="1.75rem" size="sm" onClick={handleClickVisibility}>
