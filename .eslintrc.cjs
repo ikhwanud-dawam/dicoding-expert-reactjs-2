@@ -3,8 +3,9 @@ module.exports = {
     browser: true,
     es2021: true,
     node: true,
+    'cypress/globals': true,
   },
-  extends: 'airbnb',
+  extends: ['airbnb', 'plugin:storybook/recommended'],
   overrides: [
     {
       env: {
@@ -22,7 +23,14 @@ module.exports = {
     ecmaVersion: 'latest',
     sourceType: 'module',
   },
+  plugins: [
+    'cypress',
+  ],
   rules: {
-    'import/no-extraneous-dependencies': ['error', { devDependencies: true }],
+    'import/no-extraneous-dependencies': ['error', {
+      devDependencies: true,
+    }],
+    'max-len': 'off',
+    'no-underscore-dangle': 0,
   },
 };
