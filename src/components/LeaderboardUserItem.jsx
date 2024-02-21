@@ -6,7 +6,7 @@ export default function LeaderboardUserItem({ leaderboard, authUser }) {
   const { user, score } = leaderboard;
 
   return (
-    <Flex justify="space-between">
+    <Flex justify="space-between" align="center">
       <Flex gap={3} align="center">
         <Avatar name={user.name} src={user.avatar} />
         {authUser.id === user.id ? (
