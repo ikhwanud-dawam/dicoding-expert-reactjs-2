@@ -76,7 +76,7 @@ function Homepage() {
         </Box>
         <Box>
           <Heading as="h2" fontSize="3xl" color="teal.900" mt="1rem">
-            Diskusi Tersedia
+            Diskusi Tersedia 💬
           </Heading>
           <ThreadsList
             threads={threadList}
