@@ -66,7 +66,7 @@ function Homepage() {
       <Container as="section" maxW="5xl">
         <Box as="header">
           <Heading as="h2" fontSize="3xl" color="teal.900" mt="1rem">
-            Kategori Popular
+            Kategori Popular ⭐
           </Heading>
           <ChipsList
             chips={chipsList}
